@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
+     
+  <title>Interactive rating component</title>
+
+</head>
+<body>
+ 
+  <!-- Rating state start -->
+
+  <div class="rating-box">
+    <div class="rating-box__container">
+      <div class="rating-box__background">
+        <div class="rating-box__icn-background">
+          <img src="images/icon-star.svg" alt="star" class="rating-box__icn-star">
+        </div>
+        <div class="rating-box__text-box">
+          <h2 class="rating-box__header">How did we do?</h2>
+          <p class="rating-box__para">Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!</p>
+        </div>
+        <ul class="rating-box__list">
+          <li><button class="rating-box__list--button">1</button></li>
+          <li><button class="rating-box__list--button">2</button></li>
+          <li><button class="rating-box__list--button">3</button></li>
+          <li><button class="rating-box__list--button">4</button></li>
+          <li><button class="rating-box__list--button">5</button></li>
+        </ul>
+        <div class="rating-box__button--container">
+          <button class="rating-box__submit--button"><p>Submit</p></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+ <section class="thank-you-box hidden">
+    <img src="images/illustration-thank-you.svg" alt="thank you picture">
+    <p class="gray">You selected <span class="rate">5</span> out of 5</p>
+    
+    <h2>Thank you!</h2>
+
+    <p class="thank-you-box__description">We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+ </section>
+  
+  <!-- Thank you state end -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Micah Ahr</a>.
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
